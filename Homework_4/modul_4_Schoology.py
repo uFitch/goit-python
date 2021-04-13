@@ -54,10 +54,10 @@ def scan(folder: pathlib.Path):
                 unknown.add(extension)
                 other.append(item.name)
 if __name__ == "__main__":
-    # Это первый аргумент, считаем, что это валидный адрес в файловой сиситеме
-    path = r'C:\Users\Андрій\Downloads'
+    # Первый аргумент - считаем, что это валидный адрес в файловой сиситеме
+    path = sys.argv[1]
     print(f"Start in {path}")
-    # Это список имен файлов и папок в path.
+    # Список имен файлов и папок в path.
     arg = pathlib.Path(path)
     scan(arg)
     print(f"Images: {images}")
