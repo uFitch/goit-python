@@ -54,7 +54,7 @@ def scan(folder: pathlib.Path):
                 unknown.add(extension)
                 other.append(item.name)
 if __name__ == "__main__":
-    # Первый аргумент - считаем, что это валидный адрес в файловой сиситеме
+    # Первый аргумент - считаем, что это валидный адрес в файловой системе
     path = sys.argv[1]
     print(f"Start in {path}")
     # Список имен файлов и папок в path.
