@@ -1,7 +1,7 @@
 import re
 
 
-def transliterate(text):
+def normalize(text):
 
 
    text = re.sub(r'[^\w\s]', '_', text)
