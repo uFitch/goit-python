@@ -25,7 +25,7 @@ def hello(data):
 
 @input_error
 def add_func(data):
-	data = data.replace('add ', '')
+    data = data.replace('add ', '')
     if len(data.split()) == 2:
         name, phone = data.split()
         if name not in phone_book:
@@ -38,7 +38,7 @@ def add_func(data):
 
 @input_error
 def change_func(data):
-	data = data.replace('change ', '')
+    data = data.replace('change ', '')
     if len(data.split()) == 2:
         name, phone = data.split()
         if name in phone_book:
@@ -84,8 +84,8 @@ def exit_func(data):
 
 
 OPERATIONS = {
-    'hello': hello_func,
-    'add': hello_func,
+    'hello': hello,
+    'add': add_func,
     'change': change_func,
     'phone': phone_func,
     'show all': show_all_func,
